@@ -1,10 +1,10 @@
 import "./styles.css";
+import { Component } from "react";
 
-export default function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
+class Practice extends Component {
+  render() {
+    const { candidate } = this.props;
+    return <h1>Hey {candidate}, this is just refresh project</h1>;
+  }
 }
+export default Practice;
