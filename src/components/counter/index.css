@@ -1,8 +1,17 @@
 .text-center {
   text-align: center;
   color: aqua;
+  border: 5px double red;
+  padding: 5px;
+  width: 50%;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .counter-text {
   color: red;
   font-size: 2rem;
+}
+.red-color {
+  color: blue;
 }
