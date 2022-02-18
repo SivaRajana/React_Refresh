@@ -15,3 +15,9 @@
 .red-color {
   color: blue;
 }
+.bg-increase {
+  background-color: black;
+}
+.bg-decrease {
+  background-color: turquoise;
+}

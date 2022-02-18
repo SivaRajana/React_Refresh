@@ -5,7 +5,8 @@ class Counter extends Component {
   state = {
     count: 0,
     counterDisplay: " Counter",
-    styleCounter: "counter-text"
+    styleCounter: "counter-text",
+    bgcounter: "text-center"
   };
 
   incrementClick = () => {
@@ -16,7 +17,8 @@ class Counter extends Component {
         return {
           count: prev.count + 1,
           counterDisplay: "Increasing...",
-          styleCounter: "red-color"
+          styleCounter: "red-color",
+          bgcounter: "bg-increase text-center"
         };
       }
     });
@@ -26,15 +28,19 @@ class Counter extends Component {
     this.setState((prev) => {
       console.log(`The Value is ${prev.count}`);
       if (prev.count > 0) {
-        return { count: prev.count - 1, counterDisplay: "Decreasing.." };
+        return {
+          count: prev.count - 1,
+          counterDisplay: "Decreasing..",
+          bgcounter: "bg-decrease text-center"
+        };
       }
     });
   };
 
   render() {
-    const { count, counterDisplay, styleCounter } = this.state;
+    const { count, counterDisplay, styleCounter, bgcounter } = this.state;
     return (
-      <div className="text-center">
+      <div className={bgcounter}>
         <h1 className={styleCounter}>{counterDisplay}</h1>
         <p className="counter-text">{count}</p>
         <div>
