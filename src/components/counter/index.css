@@ -9,9 +9,15 @@
   margin-left: auto;
 }
 .counter-text {
-  color: red;
+  color: blue;
   font-size: 2rem;
 }
 .red-color {
-  color: blue;
+  color: red;
+}
+.bg-counter {
+  background: yellow;
+}
+.bg-counter-black {
+  background: black;
 }
